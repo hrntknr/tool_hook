@@ -1,0 +1,5 @@
+execute if block ~ ~ ~ tripwire_hook[facing=north] align xyz positioned ~0.5 ~ ~0.5 facing ~-1 ~ ~ run summon armor_stand ^0.15 ^-0.74 ^0.18 {NoGravity: 1b, ShowArms: 1b, Pose: {RightArm: [-280f, 90f]}, Rotation: [0f, 0.0f], Invisible: 1b, Tags: ["tool_stand"]}
+execute if block ~ ~ ~ tripwire_hook[facing=south] align xyz positioned ~0.5 ~ ~0.5 facing ~1 ~ ~ run summon armor_stand ^0.15 ^-0.74 ^0.18 {NoGravity: 1b, ShowArms: 1b, Pose: {RightArm: [-280f, 90f]}, Rotation: [180.0f, 0.0f], Invisible: 1b, Tags: ["tool_stand"]}
+execute if block ~ ~ ~ tripwire_hook[facing=east] align xyz positioned ~0.5 ~ ~0.5 facing ~ ~ ~-1 run summon armor_stand ^0.15 ^-0.74 ^0.18 {NoGravity: 1b, ShowArms: 1b, Pose: {RightArm: [-280f, 90f]}, Rotation: [90.0f, 0.0f], Invisible: 1b, Tags: ["tool_stand"]}
+execute if block ~ ~ ~ tripwire_hook[facing=west] align xyz positioned ~0.5 ~ ~0.5 facing ~ ~ ~1 run summon armor_stand ^0.15 ^-0.74 ^0.18 {NoGravity: 1b, ShowArms: 1b, Pose: {RightArm: [-280f, 90f]}, Rotation: [-90.0f, 0.0f], Invisible: 1b, Tags: ["tool_stand"]}
+execute unless block ~ ~ ~ tripwire_hook positioned ^ ^ ^0.1 run function tool_hook:place_hook_main

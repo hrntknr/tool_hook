@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "place_hook": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:tripwire_hook",
+        "item": {
+          "display": {"Name": "{\"text\":\"Tool Hook\",\"color\":\"aqua\"}"}
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "tool_hook:place_hook"
+  }
+}
